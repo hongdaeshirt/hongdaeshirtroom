@@ -2,26 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hongdaeshirt.github.io/hongdaeshirtroom/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-07-15T12:00:00+09:00</lastmod>
   </url>
   <url>
     <loc>https://hongdaeshirt.github.io/hongdaeshirtroom/location/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-07-15T12:00:00+09:00</lastmod>
   </url>
   <url>
     <loc>https://hongdaeshirt.github.io/hongdaeshirtroom/reserve/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-07-15T12:00:00+09:00</lastmod>
   </url>
   <url>
     <loc>https://hongdaeshirt.github.io/hongdaeshirtroom/faq/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-07-15T12:00:00+09:00</lastmod>
   </url>
 </urlset>
