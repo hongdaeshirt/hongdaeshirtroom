@@ -310,15 +310,20 @@ td { color: var(--muted); }
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
+.gallery picture,
 .gallery img {
+  display: block;
   width: 100%;
+}
+.gallery img {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--line);
   transition: transform 280ms ease, filter 280ms ease;
 }
-.gallery img:hover {
+.gallery picture:hover img,
+.gallery > img:hover {
   transform: translateY(-3px) scale(1.01);
   filter: saturate(1.08);
 }
@@ -375,6 +380,80 @@ td { color: var(--muted); }
   letter-spacing: 0.06em;
 }
 .tiny { font-size: 0.85rem; opacity: 0.85; }
+
+.crumb {
+  margin: 0 0 14px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+.crumb a { color: var(--gold-2); text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+
+.page-hero {
+  padding: 48px 0 28px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(196, 92, 38, 0.12), transparent);
+}
+.page-hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.page-hero .lead { margin-bottom: 18px; }
+
+.silo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 0;
+}
+.silo-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+  background: rgba(255,255,255,0.03);
+  font-size: 0.92rem;
+}
+.silo-links a:hover { border-color: var(--gold); color: var(--gold-2); }
+
+.intro-block {
+  margin: 0 0 22px;
+}
+.intro-block p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+.freshness {
+  margin: 18px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.freshness time { color: var(--gold-2); }
+.foot-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 14px;
+}
+.foot-nav a {
+  color: var(--gold-2);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+.foot-nav a:hover { text-decoration: underline; }
+
+.content-links a {
+  color: var(--gold-2);
+  text-underline-offset: 2px;
+}
 
 .dock {
   position: fixed;
