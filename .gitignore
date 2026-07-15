@@ -1,2 +1,5 @@
 # Local Netlify folder
 .netlify
+
+site-raw.txt
+update-site.json
