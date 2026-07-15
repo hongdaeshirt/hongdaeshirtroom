@@ -8,12 +8,12 @@
   --gold-2: #f0d2ae;
   --accent: #c45c26;
   --max: 1080px;
-  --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-  --display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; color-scheme: dark; }
 body {
   margin: 0;
   background:
@@ -27,7 +27,7 @@ body {
   overflow-wrap: break-word;
   padding-bottom: 88px;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; display: block; height: auto; }
 a { color: inherit; }
 .skip {
   position: absolute;
@@ -160,6 +160,8 @@ a { color: inherit; }
   color: #1a120c;
   border: none;
   transition: transform 180ms ease, filter 180ms ease;
+  cursor: pointer;
+  font: inherit;
 }
 .btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
 .btn.soft {
@@ -328,18 +330,40 @@ td { color: var(--muted); }
   filter: saturate(1.08);
 }
 
-.map-frame {
+.map-frame,
+.map-facade {
   border: 1px solid var(--line);
   border-radius: 16px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  background: #111;
+  background:
+    linear-gradient(180deg, rgba(12,10,9,0.2), rgba(12,10,9,0.78)),
+    url("../img/space/hongdae-night.webp") center/cover no-repeat;
+  position: relative;
 }
-.map-frame iframe {
+.map-frame iframe,
+.map-facade iframe {
   width: 100%;
   height: 100%;
   border: 0;
   filter: grayscale(0.25) contrast(1.05);
+}
+.map-facade {
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  text-align: center;
+}
+.map-facade.is-loaded {
+  padding: 0;
+  background: #111;
+}
+.map-facade .map-load-btn { min-width: min(100%, 320px); }
+.map-facade .map-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 28rem;
 }
 .bullets {
   margin: 18px 0 0;
@@ -473,6 +497,16 @@ td { color: var(--muted); }
 @keyframes rise {
   from { opacity: 0; transform: translateY(18px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-media img,
+  .hero-copy,
+  .gallery img {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 @media (max-width: 900px) {

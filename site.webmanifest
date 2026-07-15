@@ -1,0 +1,24 @@
+{
+  "name": "홍대셔츠룸",
+  "short_name": "홍대셔츠룸",
+  "description": "홍대입구역 인근 합법 유흥주점 이용·예약 안내",
+  "start_url": "/hongdaeshirtroom/",
+  "scope": "/hongdaeshirtroom/",
+  "display": "standalone",
+  "background_color": "#0c0a09",
+  "theme_color": "#0c0a09",
+  "lang": "ko-KR",
+  "icons": [
+    {
+      "src": "/hongdaeshirtroom/assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/hongdaeshirtroom/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
