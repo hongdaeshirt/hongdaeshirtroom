@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hongdaeshirtroom.netlify.app/sitemap.xml
-Sitemap: https://hongdaeshirtroom.netlify.app/sitemap.txt
+Sitemap: https://hongdaeshirt.github.io/hongdaeshirtroom/sitemap.xml
+Sitemap: https://hongdaeshirt.github.io/hongdaeshirtroom/sitemap.txt
