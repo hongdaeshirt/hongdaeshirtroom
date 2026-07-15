@@ -4,8 +4,8 @@
   "start_url": "/hongdaeshirtroom/",
   "scope": "/hongdaeshirtroom/",
   "display": "standalone",
-  "background_color": "#f4f2f0",
-  "theme_color": "#0d0d0d",
+  "background_color": "#12100e",
+  "theme_color": "#12100e",
   "lang": "ko-KR",
   "icons": [
     {
