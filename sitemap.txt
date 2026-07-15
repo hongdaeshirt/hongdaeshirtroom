@@ -1,4 +1,4 @@
-https://hongdaeshirt.github.io/hongdaeshirtroom/
-https://hongdaeshirt.github.io/hongdaeshirtroom/location/
-https://hongdaeshirt.github.io/hongdaeshirtroom/reserve/
-https://hongdaeshirt.github.io/hongdaeshirtroom/faq/
+https://hongdaeshirtroom.netlify.app/
+https://hongdaeshirtroom.netlify.app/location/
+https://hongdaeshirtroom.netlify.app/reserve/
+https://hongdaeshirtroom.netlify.app/faq/
